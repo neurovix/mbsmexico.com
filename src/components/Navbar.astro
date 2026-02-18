@@ -1,0 +1,252 @@
+---
+import { Image } from "astro:assets";
+import Logo from "/public/mbslogo.jpg";
+import Phone from "/public/phone.png";
+---
+
+<nav
+  class="bg-white shadow-sm sticky top-0 z-50 border-b border-gray-100 px-5 lg:px-0 py-1 lg:py-1"
+>
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex items-center justify-between h-16 lg:h-20">
+      <!-- Logo y nombre de la empresa -->
+      <div class="flex-shrink-0">
+        <a href="/" class="flex items-center group">
+          <Image
+            class="w-8 h-8 sm:w-10 sm:h-10 lg:w-12 lg:h-12 rounded-lg transition-transform group-hover:scale-105"
+            src={Logo}
+            alt="MBS - Construcciones y Proyectos S.A de C.V"
+          />
+          <div class="ml-3 sm:ml-4">
+            <h1
+              class="font-bold text-lg sm:text-xl lg:text-2xl text-gray-900 group-hover:text-red-600 transition-colors"
+            >
+              MBS
+            </h1>
+            <h3
+              class="text-xs sm:text-sm lg:text-base text-gray-600 leading-tight max-w-48 sm:max-w-none"
+            >
+              PROYECTOS Y CONSTRUCCIONES S.A. DE C.V.
+            </h3>
+          </div>
+        </a>
+      </div>
+
+      <!-- Menú de navegación - Desktop -->
+      <div class="hidden lg:block">
+        <ul class="flex items-center space-x-3">
+          <li>
+            <a
+              href="/"
+              class="text-gray-700 hover:text-red-600 font-medium transition-colors duration-200 relative group"
+            >
+              Inicio
+              <span
+                class="absolute -bottom-1 left-0 w-0 h-0.5 bg-red-600 transition-all duration-200 group-hover:w-full"
+              ></span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="/servicios"
+              class="text-gray-700 hover:text-red-600 font-medium transition-colors duration-200 relative group"
+            >
+              Servicios
+              <span
+                class="absolute -bottom-1 left-0 w-0 h-0.5 bg-red-600 transition-all duration-200 group-hover:w-full"
+              ></span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="/proyectos"
+              class="text-gray-700 hover:text-red-600 font-medium transition-colors duration-200 relative group"
+            >
+              Proyectos
+              <span
+                class="absolute -bottom-1 left-0 w-0 h-0.5 bg-red-600 transition-all duration-200 group-hover:w-full"
+              ></span>
+            </a>
+          </li>
+          <li>
+            <li>
+              <a
+                href="/sobre_nosotros"
+                class="text-gray-700 hover:text-red-600 font-medium transition-colors duration-200 relative group"
+              >
+                Sobre nosotros
+                <span
+                  class="absolute -bottom-1 left-0 w-0 h-0.5 bg-red-600 transition-all duration-200 group-hover:w-full"
+                ></span>
+              </a>
+            </li>
+            <li></li>
+            <a
+              href="/contacto"
+              class="text-gray-700 hover:text-red-600 font-medium transition-colors duration-200 relative group"
+            >
+              Contacto
+              <span
+                class="absolute -bottom-1 left-0 w-0 h-0.5 bg-red-600 transition-all duration-200 group-hover:w-full"
+              ></span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Información de contacto - Desktop -->
+      <div class="hidden lg:flex items-center">
+        <div
+          class="flex items-center bg-gray-50 px-4 py-2 rounded-lg hover:bg-red-200 transition-colors duration-200"
+        >
+          <Image class="w-6 h-6 mr-3 opacity-80" src={Phone} alt="Teléfono" />
+          <a
+            href="tel:+528120398790"
+            class="text-gray-700 font-medium hover:text-red-600 transition-colors"
+          >
+            +52 (81) 2039-8790
+          </a>
+        </div>
+      </div>
+
+      <!-- Botón de menú móvil -->
+      <div class="lg:hidden">
+        <button
+          id="mobile-menu-button"
+          class="inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:text-blue-600 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500 transition-colors duration-200"
+          aria-expanded="false"
+        >
+          <span class="sr-only">Abrir menú principal</span>
+          <svg
+            class="block h-6 w-6"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            aria-hidden="true"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+          <svg
+            class="hidden h-6 w-6"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            aria-hidden="true"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M6 18L18 6M6 6l12 12"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Menú móvil -->
+  <div id="mobile-menu" class="lg:hidden hidden">
+    <div
+      class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white border-t border-gray-200"
+    >
+      <a
+        href="/"
+        class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50 transition-colors duration-200"
+      >
+        Inicio
+      </a>
+      <a
+        href="/servicios"
+        class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50 transition-colors duration-200"
+      >
+        Servicios
+      </a>
+      <a
+        href="/proyectos"
+        class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50 transition-colors duration-200"
+      >
+        Proyectos
+      </a>
+      <a
+        href="/sobre_nosotros"
+        class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50 transition-colors duration-200"
+      >
+        Sobre nosotros
+      </a>
+      <a
+        href="/contacto"
+        class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50 transition-colors duration-200"
+      >
+        Contacto
+      </a>
+
+      <!-- Información de contacto en móvil -->
+      <div class="px-3 py-2 border-t border-gray-200 mt-2">
+        <div class="flex items-center">
+          <Image class="w-5 h-5 mr-3 opacity-80" src={Phone} alt="Teléfono" />
+          <a
+            href="tel:+528120398790"
+            class="text-gray-700 font-medium hover:text-blue-600 transition-colors"
+          >
+            +52 (81) 2039-8790
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<script>
+  // Funcionalidad del menú móvil
+  document.addEventListener("DOMContentLoaded", () => {
+    const mobileMenuButton = document.getElementById("mobile-menu-button");
+    const mobileMenu = document.getElementById("mobile-menu");
+    const menuIcons = mobileMenuButton?.querySelectorAll("svg");
+
+    mobileMenuButton?.addEventListener("click", () => {
+      const isExpanded =
+        mobileMenuButton.getAttribute("aria-expanded") === "true";
+
+      // Toggle aria-expanded
+      mobileMenuButton.setAttribute("aria-expanded", String(!isExpanded));
+
+      // Toggle menu visibility
+      mobileMenu?.classList.toggle("hidden");
+
+      // Toggle icons
+      menuIcons?.forEach((icon, index) => {
+        if (index === 0) {
+          icon.classList.toggle("hidden", !isExpanded);
+          icon.classList.toggle("block", isExpanded);
+        } else {
+          icon.classList.toggle("hidden", isExpanded);
+          icon.classList.toggle("block", !isExpanded);
+        }
+      });
+    });
+
+    // Cerrar menú al hacer clic en un enlace
+    const mobileMenuLinks = mobileMenu?.querySelectorAll("a");
+    mobileMenuLinks?.forEach((link) => {
+      link.addEventListener("click", () => {
+        mobileMenu?.classList.add("hidden");
+        mobileMenuButton?.setAttribute("aria-expanded", "false");
+        menuIcons?.forEach((icon, index) => {
+          if (index === 0) {
+            icon.classList.add("block");
+            icon.classList.remove("hidden");
+          } else {
+            icon.classList.add("hidden");
+            icon.classList.remove("block");
+          }
+        });
+      });
+    });
+  });
+</script>

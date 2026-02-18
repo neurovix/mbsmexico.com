@@ -1,0 +1,469 @@
+---
+import Navbar from "../components/Navbar.astro";
+import Layout from "../layouts/Layout.astro";
+import Footer from "../components/Footer.astro";
+import { Image } from "astro:assets";
+
+import Foto7 from "/public/foto7.jpeg";
+
+import WorldTradeCenter from "/public/world_trade_center_guadalajara.jpg";
+import CentroBanorte from "/public/centro_de_contacto_banorte.jpg";
+import PuntoValle from "/public/punto_valle.jpg";
+
+import Eqqus from "/public/torres_eqqus.jpg";
+import CasinoMonterrey from "/public/casino_monterrey.jpeg";
+import OfficesGreen from "/public/offices_on_the_green.jpg";
+import Yazaki from "/public/yazaki.jpg";
+---
+
+<Layout>
+    <main>
+        <Navbar />
+        
+        <!-- Hero Section -->
+        <section class="relative bg-gray-900 py-20">
+            <div class="absolute inset-0 bg-gradient-to-br from-yellow-500/10 to-transparent"></div>
+            <div class="relative max-w-7xl mx-auto px-6 sm:px-8 lg:px-20 text-center">
+                <h1 class="text-5xl sm:text-6xl font-bold text-white mb-6">
+                    Nuestros <span class="text-red-500">Proyectos</span>
+                </h1>
+                <p class="text-xl text-gray-300 max-w-3xl mx-auto mb-8">
+                    Más de 40 proyectos exitosos documentados en impermeabilización, recubrimientos epóxicos 
+                    y sistemas especializados en Monterrey y área metropolitana.
+                </p>
+                <div class="flex flex-wrap justify-center gap-4">
+                    <button class="px-6 py-3 bg-red-500 text-white font-semibold rounded-lg hover:bg-red-400 transition-colors">
+                        Todos los Proyectos
+                    </button>
+                    <button class="px-6 py-3 bg-gray-800 text-white font-semibold rounded-lg hover:bg-gray-700 transition-colors">
+                        Impermeabilización
+                    </button>
+                    <button class="px-6 py-3 bg-gray-800 text-white font-semibold rounded-lg hover:bg-gray-700 transition-colors">
+                        Epóxicos
+                    </button>
+                    <button class="px-6 py-3 bg-gray-800 text-white font-semibold rounded-lg hover:bg-gray-700 transition-colors">
+                        Industriales
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Projects Carousel -->
+        <section class="py-20 bg-black">
+            <div class="max-w-7xl mx-auto px-6 sm:px-8 lg:px-20">
+                <div class="flex justify-between items-center mb-12">
+                    <h2 class="text-4xl font-bold text-white">Proyectos Destacados</h2>
+                    <div class="flex space-x-2">
+                        <button class="w-12 h-12 bg-gray-800 rounded-full flex items-center justify-center text-white hover:bg-gray-700 transition-colors">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+                            </svg>
+                        </button>
+                        <button class="w-12 h-12 bg-red-500 rounded-full flex items-center justify-center text-white hover:bg-red-400 transition-colors">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="bg-gray-900 rounded-xl overflow-hidden group hover:transform hover:scale-105 transition-all duration-300">
+                        <div class="h-64 bg-gradient-to-br from-gray-700 to-gray-800 relative">
+                            <div class="absolute inset-0 bg-black/20">
+                                <Image 
+                                    src={WorldTradeCenter} 
+                                    alt="World Trade Center Guadalajara" 
+                                    class="w-full h-full object-cover"
+                                />
+                            </div>
+                            <div class="absolute top-4 left-4">
+                                <span class="bg-yellow-500 text-black px-3 py-1 rounded-full text-sm font-semibold">Destacado</span>
+                            </div>
+                            <div class="absolute bottom-4 left-4 right-4">
+                                <h3 class="text-xl font-bold text-white mb-2">World Trade Center Guadalajara</h3>
+                                <p class="text-gray-300 text-sm">Impermeabilización completa • Green Roof • Cisternas</p>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <div class="flex items-center justify-between mb-4">
+                                <span class="text-blue-400 font-semibold">Comercial</span>
+                                <span class="text-gray-400 text-sm">Guadalajara</span>
+                            </div>
+                            <p class="text-gray-300 mb-4">Proyecto integral de impermeabilización de azoteas, cisternas, espejos de agua y sistema Green Roof para Prisma Proyectos.</p>
+                            <a href="#" class="text-red-400 hover:text-red-300 font-semibold">Ver detalles →</a>
+                        </div>
+                    </div>
+
+                    <div class="bg-gray-900 rounded-xl overflow-hidden group hover:transform hover:scale-105 transition-all duration-300">
+                        <div class="h-64 bg-gradient-to-br from-gray-600 to-gray-700 relative">
+                            <div class="absolute inset-0 bg-black/20">
+                                <Image 
+                                    src={CentroBanorte} 
+                                    alt="Centro de Contacto BANORTE" 
+                                    class="w-full h-full object-cover"
+                                />
+                            </div>
+                            <div class="absolute top-4 left-4">
+                                <span class="bg-green-500 text-white px-3 py-1 rounded-full text-sm font-semibold">Completado</span>
+                            </div>
+                            <div class="absolute bottom-4 left-4 right-4">
+                                <h3 class="text-xl font-bold text-white mb-2">Centro de Contacto BANORTE</h3>
+                                <p class="text-gray-300 text-sm">Impermeabilización • Epóxicos • San Nicolás</p>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <div class="flex items-center justify-between mb-4">
+                                <span class="text-yellow-400 font-semibold">Corporativo</span>
+                                <span class="text-gray-400 text-sm">PMP</span>
+                            </div>
+                            <p class="text-gray-300 mb-4">Impermeabilización de azoteas, muros de contención, cisternas y recubrimientos epóxicos.</p>
+                            <a href="#" class="text-red-400 hover:text-red-300 font-semibold">Ver detalles →</a>
+                        </div>
+                    </div>
+
+                    <div class="bg-gray-900 rounded-xl overflow-hidden group hover:transform hover:scale-105 transition-all duration-300">
+                        <div class="h-64 bg-gradient-to-br from-gray-800 to-gray-900 relative">
+                            <div class="absolute inset-0 bg-black/20">
+                                <Image 
+                                    src={PuntoValle} 
+                                    alt="Punto Valle Complex" 
+                                    class="w-full h-full object-cover"
+                                />
+                            </div>
+                            <div class="absolute top-4 left-4">
+                                <span class="bg-blue-500 text-white px-3 py-1 rounded-full text-sm font-semibold">Mixto</span>
+                            </div>
+                            <div class="absolute bottom-4 left-4 right-4">
+                                <h3 class="text-xl font-bold text-white mb-2">Punto Valle (Cinépolis/Westin)</h3>
+                                <p class="text-gray-300 text-sm">6 Sótanos • Epóxicos • San Pedro</p>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <div class="flex items-center justify-between mb-4">
+                                <span class="text-red-400 font-semibold">Mixto</span>
+                                <span class="text-gray-400 text-sm">IP Proyectos</span>
+                            </div>
+                            <p class="text-gray-300 mb-4">Complejo mixto con impermeabilización de áreas generales, verdes, muros y pintura epóxica en 6 sótanos.</p>
+                            <a href="#" class="text-red-400 hover:text-red-300 font-semibold">Ver detalles →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Project Gallery Grid -->
+        <section class="py-20 bg-gray-900">
+            <div class="max-w-7xl mx-auto px-6 sm:px-8 lg:px-20">
+                <h2 class="text-4xl font-bold text-white mb-12 text-center">Galería de Proyectos Principales</h2>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <!-- Large Featured Project -->
+                    <div class="lg:col-span-2 lg:row-span-2">
+                        <div class="bg-gray-800 rounded-lg h-full min-h-[400px] relative overflow-hidden group cursor-pointer">
+                            <div class="absolute inset-0 bg-gradient-to-br from-gray-700 to-gray-800"></div>
+                            <div class="absolute inset-0 bg-black/40 group-hover:bg-black/60 transition-colors">
+                                <Image 
+                                    src={Eqqus} 
+                                    alt="Torres EQQUS San Pedro" 
+                                    class="w-full h-full object-cover"
+                                />
+                            </div>
+                            <div class="absolute bottom-6 left-6 right-6 text-white">
+                                <h3 class="text-2xl font-bold mb-2">Torres EQQUS</h3>
+                                <p class="text-gray-200 mb-3">Impermeabilización integral de muros de contención, Green Roof, azoteas, cisternas y recubrimientos epóxicos</p>
+                                <div class="flex items-center space-x-4">
+                                    <span class="bg-blue-500 text-white px-3 py-1 rounded-full text-sm">Residencial Premium</span>
+                                    <span class="text-gray-300">San Pedro Garza García</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Small Projects -->
+                    <div class="bg-gray-800 rounded-lg h-48 relative overflow-hidden group cursor-pointer">
+                        <div class="absolute inset-0 bg-gradient-to-br from-gray-600 to-gray-700"></div>
+                        <div class="absolute inset-0 bg-black/40 group-hover:bg-black/60 transition-colors">
+                            <Image 
+                                src={CasinoMonterrey} 
+                                alt="Casino Monterrey" 
+                                class="w-full h-full object-cover"
+                            />
+                        </div>
+                        <div class="absolute bottom-4 left-4 right-4 text-white">
+                            <h4 class="font-bold">Casino Monterrey</h4>
+                            <p class="text-sm text-gray-300">Impermeabilización y Epóxicos</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-gray-800 rounded-lg h-48 relative overflow-hidden group cursor-pointer">
+                        <div class="absolute inset-0 bg-gradient-to-br from-gray-700 to-gray-800"></div>
+                        <div class="absolute inset-0 bg-black/40 group-hover:bg-black/60 transition-colors">
+                            <Image 
+                                src={OfficesGreen} 
+                                alt="Offices on the Green" 
+                                class="w-full h-full object-cover"
+                            />
+                        </div>
+                        <div class="absolute bottom-4 left-4 right-4 text-white">
+                            <h4 class="font-bold">Offices on the Green</h4>
+                            <p class="text-sm text-gray-300">Green Roof • San Pedro</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-gray-800 rounded-lg h-48 relative overflow-hidden group cursor-pointer">
+                        <div class="absolute inset-0 bg-gradient-to-br from-gray-650 to-gray-750"></div>
+                        <div class="absolute inset-0 bg-black/40 group-hover:bg-black/60 transition-colors">
+                            <Image 
+                                src={Foto7} 
+                                alt="Planta CONMET" 
+                                class="w-full h-full object-cover"
+                            />
+                        </div>
+                        <div class="absolute bottom-4 left-4 right-4 text-white">
+                            <h4 class="font-bold">Planta CONMET</h4>
+                            <p class="text-sm text-gray-300">Industrial • Salinas Victoria</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-gray-800 rounded-lg h-48 relative overflow-hidden group cursor-pointer">
+                        <div class="absolute inset-0 bg-gradient-to-br from-gray-600 to-gray-800"></div>
+                        <div class="absolute inset-0 bg-black/40 group-hover:bg-black/60 transition-colors">
+                            <Image 
+                                src={Yazaki} 
+                                alt="YAZAKI Plant" 
+                                class="w-full h-full object-cover"
+                            />
+                        </div>
+                        <div class="absolute bottom-4 left-4 right-4 text-white">
+                            <h4 class="font-bold">Planta YAZAKI</h4>
+                            <p class="text-sm text-gray-300">Epóxicos y Pulido de Concreto</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Major Clients Section -->
+        <section class="py-20 bg-black">
+            <div class="max-w-7xl mx-auto px-6 sm:px-8 lg:px-20">
+                <div class="text-center mb-12">
+                    <h2 class="text-4xl font-bold text-white mb-4">Proyectos por Clientes Principales</h2>
+                    <p class="text-gray-300 text-lg">Trabajamos con las empresas más importantes de la región</p>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                    <!-- PLADIS Projects -->
+                    <div class="bg-gray-900 rounded-xl p-6">
+                        <div class="h-16 w-16 bg-gradient-to-br from-blue-500 to-blue-700 rounded-lg flex items-center justify-center mb-4">
+                            <span class="text-white font-bold text-lg">PL</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3">PLADIS</h3>
+                        <p class="text-gray-300 mb-4">Múltiples proyectos incluyendo Casino Monterrey, Offices on the Green, YAZAKI, Moll del Valle, Los Pinos</p>
+                        <div class="text-red-400 font-semibold">7+ proyectos completados</div>
+                    </div>
+
+                    <!-- Teleperformance Projects -->
+                    <div class="bg-gray-900 rounded-xl p-6">
+                        <div class="h-16 w-16 bg-gradient-to-br from-green-500 to-green-700 rounded-lg flex items-center justify-center mb-4">
+                            <span class="text-white font-bold text-lg">TP</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3">Teleperformance</h3>
+                        <p class="text-gray-300 mb-4">Estacionamientos TP Milenio, TP4, Edificio TP Centro, Edificio TP Coyoacán</p>
+                        <div class="text-red-400 font-semibold">4+ edificios</div>
+                    </div>
+
+                    <!-- Industrial Clients -->
+                    <div class="bg-gray-900 rounded-xl p-6">
+                        <div class="h-16 w-16 bg-gradient-to-br from-red-500 to-red-700 rounded-lg flex items-center justify-center mb-4">
+                            <span class="text-white font-bold text-lg">IND</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3">Sector Industrial</h3>
+                        <p class="text-gray-300 mb-4">CONMET, Whirlpool, KOHLER, NGK, Panasonic, YAZAKI y más plantas industriales</p>
+                        <div class="text-red-400 font-semibold">10+ plantas</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Categories -->
+        <section class="py-20 bg-gray-900">
+            <div class="max-w-7xl mx-auto px-6 sm:px-8 lg:px-20">
+                <h2 class="text-4xl font-bold text-white mb-12 text-center">Especialidades por Proyecto</h2>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div class="bg-gray-800 rounded-lg p-6 text-center">
+                        <div class="h-16 w-16 bg-blue-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2L2 7v10c0 5.55 3.84 9.739 9 9.99 5.16-.251 9-4.44 9-9.99V7l-10-5z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-lg font-bold text-white mb-2">Impermeabilización</h3>
+                        <p class="text-gray-300 text-sm mb-3">Azoteas, muros, cisternas, green roofs</p>
+                        <div class="text-blue-400 font-semibold">25+ proyectos</div>
+                    </div>
+
+                    <div class="bg-gray-800 rounded-lg p-6 text-center">
+                        <div class="h-16 w-16 bg-green-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-lg font-bold text-white mb-2">Recubrimientos Epóxicos</h3>
+                        <p class="text-gray-300 text-sm mb-3">Pisos industriales, estacionamientos</p>
+                        <div class="text-green-400 font-semibold">20+ proyectos</div>
+                    </div>
+
+                    <div class="bg-gray-800 rounded-lg p-6 text-center">
+                        <div class="h-16 w-16 bg-yellow-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-lg font-bold text-white mb-2">Pulido y Abrillantado</h3>
+                        <p class="text-gray-300 text-sm mb-3">Concreto industrial especializado</p>
+                        <div class="text-yellow-400 font-semibold">8+ proyectos</div>
+                    </div>
+
+                    <div class="bg-gray-800 rounded-lg p-6 text-center">
+                        <div class="h-16 w-16 bg-red-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2L2 7v10c0 5.55 3.84 9.739 9 9.99 5.16-.251 9-4.44 9-9.99V7l-10-5z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-lg font-bold text-white mb-2">Green Roofs</h3>
+                        <p class="text-gray-300 text-sm mb-3">Sistemas de techos verdes</p>
+                        <div class="text-red-400 font-semibold">6+ proyectos</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Geographic Coverage -->
+        <section class="py-20 bg-black">
+            <div class="max-w-7xl mx-auto px-6 sm:px-8 lg:px-20">
+                <div class="text-center mb-12">
+                    <h2 class="text-4xl font-bold text-white mb-4">Cobertura Geográfica</h2>
+                    <p class="text-gray-300 text-lg">Proyectos realizados en múltiples ciudades</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="bg-gray-900 rounded-xl p-6 text-center">
+                        <h3 class="text-2xl font-bold text-white mb-3">Área Metropolitana de Monterrey</h3>
+                        <p class="text-gray-300 mb-4">Monterrey, San Pedro Garza García, San Nicolás, Apodaca, Escobedo, Salinas Victoria</p>
+                        <div class="text-red-400 font-bold text-xl">35+ proyectos</div>
+                    </div>
+
+                    <div class="bg-gray-900 rounded-xl p-6 text-center">
+                        <h3 class="text-2xl font-bold text-white mb-3">Otras Ciudades</h3>
+                        <p class="text-gray-300 mb-4">Guadalajara, Ciudad del Carmen, Saltillo, Coyoacán D.F., Arteaga Coahuila</p>
+                        <div class="text-red-400 font-bold text-xl">7+ proyectos</div>
+                    </div>
+
+                    <div class="bg-gray-900 rounded-xl p-6 text-center">
+                        <h3 class="text-2xl font-bold text-white mb-3">Sectores</h3>
+                        <p class="text-gray-300 mb-4">Corporativo, Industrial, Residencial Premium, Entretenimiento, Salud</p>
+                        <div class="text-red-400 font-bold text-xl">5 sectores</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Project Statistics -->
+        <section class="py-20 bg-red-600">
+            <div class="max-w-7xl mx-auto px-6 sm:px-8 lg:px-20">
+                <div class="grid grid-cols-2 md:grid-cols-4 text-white gap-8 text-center">
+                    <div>
+                        <div class="text-4xl font-bold mb-2">42+</div>
+                        <div class="font-semibold">Proyectos Documentados</div>
+                    </div>
+                    <div>
+                        <div class="text-4xl font-bold mb-2">15+</div>
+                        <div class=" font-semibold">Años de Experiencia</div>
+                    </div>
+                    <div>
+                        <div class="text-4xl font-bold mb-2">25+</div>
+                        <div class="font-semibold">Clientes Principales</div>
+                    </div>
+                    <div>
+                        <div class="text-4xl font-bold mb-2">7</div>
+                        <div class="font-semibold">Estados de la República</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Client Testimonials based on real projects -->
+        <section class="py-20 bg-gray-900">
+            <div class="max-w-7xl mx-auto px-6 sm:px-8 lg:px-20">
+                <h2 class="text-4xl font-bold text-white mb-12 text-center">Clientes que Confían en MBS</h2>
+                
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                    <div class="bg-gray-800 rounded-xl p-6">
+                        <div class="h-32 bg-gradient-to-br from-blue-600 to-blue-700 rounded-lg mb-4 relative flex items-center justify-center">
+                            <span class="text-white font-bold text-2xl">PLADIS</span>
+                        </div>
+                        <div class="mb-4">
+                            <h4 class="text-white font-semibold mb-1">Múltiples Proyectos</h4>
+                            <p class="text-gray-400 text-sm">Casino Monterrey, Offices on the Green, YAZAKI</p>
+                        </div>
+                        <p class="text-gray-300 mb-4">"Socio confiable para nuestros proyectos más importantes de impermeabilización y recubrimientos especializados."</p>
+                        <div class="flex text-red-500">
+                            <span>★★★★★</span>
+                        </div>
+                    </div>
+                    <div class="bg-gray-800 rounded-xl p-6">
+                        <div class="h-32 bg-gradient-to-br from-green-600 to-green-700 rounded-lg mb-4 relative flex items-center justify-center">
+                            <span class="text-white font-bold text-lg">BANORTE</span>
+                        </div>
+                        <div class="mb-4">
+                            <h4 class="text-white font-semibold mb-1">Centro de Contacto</h4>
+                            <p class="text-gray-400 text-sm">San Nicolás de los Garza, N.L.</p>
+                        </div>
+                        <p class="text-gray-300 mb-4">"Excelente trabajo en impermeabilización integral y recubrimientos epóxicos en nuestras instalaciones corporativas."</p>
+                        <div class="flex text-red-500">
+                            <span>★★★★★</span>
+                        </div>
+                    </div>
+
+                    <div class="bg-gray-800 rounded-xl p-6">
+                        <div class="h-32 bg-gradient-to-br from-red-600 to-red-700 rounded-lg mb-4 relative flex items-center justify-center">
+                            <span class="text-white font-bold text-lg">HAZAMA</span>
+                        </div>
+                        <div class="mb-4">
+                            <h4 class="text-white font-semibold mb-1">Proyectos Industriales</h4>
+                            <p class="text-gray-400 text-sm">NGK, TATSUMI</p>
+                        </div>
+                        <p class="text-gray-300 mb-4">"Especialistas en recubrimientos industriales para nuestras plantas de manufactura japonesa."</p>
+                        <div class="flex text-red-500">
+                            <span>★★★★★</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="py-20 bg-gray-600">
+            <div class="max-w-4xl mx-auto px-6 sm:px-8 lg:px-20 text-center">
+                <h2 class="text-4xl font-bold text-white mb-6">¿Tienes un proyecto en mente?</h2>
+                <p class="text-xl text-gray-300 mb-8">
+                    Con más de 40 proyectos exitosos documentados, somos tu mejor opción para impermeabilización y recubrimientos especializados.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="mailto:berthacantu@mbsmexico.com" class="inline-flex items-center px-8 py-4 bg-red-500 text-white font-bold rounded-lg hover:bg-red-400 transition-colors">
+                        Contactar Arq. Bertha Cantu
+                    </a>
+                    <a href="tel:8120398790" class="inline-flex items-center px-8 py-4 border-2 border-red-500 text-white font-bold rounded-lg hover:bg-red-500 hover:text-white transition-colors">
+                        (81) 2039-8790
+                    </a>
+                </div>
+                <p class="text-gray-400 mt-4 text-sm">
+                    División 21 #150, Antonio I. Villarreal, Monterrey, N.L. • acantu@mbsmexico.com
+                </p>
+            </div>
+        </section>
+
+        <Footer />
+    </main>
+</Layout>

@@ -1,0 +1,456 @@
+---
+import Navbar from "../components/Navbar.astro";
+import Layout from "../layouts/Layout.astro";
+import Footer from "../components/Footer.astro";
+import Image from "astro/components/Image.astro";
+
+import MbsIISE1 from "/public/new1.jpg";
+import MbsIISE2 from "/public/new2.jpg";
+import MbsIISE3 from "/public/new4.jpg";
+
+import AboutUs1 from "/public/new6.jpeg";
+
+import More1 from "/public/more1.jpeg";
+import More3 from "/public/more3.jpeg";
+import More4 from "/public/more4.jpeg";
+import More5 from "/public/more5.jpeg";
+import More7 from "/public/more7.jpeg";
+---
+
+<Layout>
+    <main>
+        <Navbar />
+
+        <!-- Hero Section -->
+        <section
+            class="bg-gradient-to-br from-red-900 via-red-800 to-gray-900 text-white py-40 px-4"
+        >
+            <div class="max-w-6xl mx-auto text-center">
+                <h1 class="text-5xl md:text-6xl font-bold mb-6">
+                    Sobre nosotros
+                </h1>
+                <p class="text-xl md:text-2xl text-blue-200 max-w-3xl mx-auto">
+                    Construyendo el futuro con excelencia, innovación y
+                    compromiso
+                </p>
+            </div>
+        </section>
+
+        <!-- Nuestra Historia -->
+        <section class="pt-16 pb-10 px-4 bg-gray-50">
+            <div class="max-w-6xl mx-auto">
+                <div
+                    class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center"
+                >
+                    <div>
+                        <h2 class="text-4xl font-bold text-gray-900 mb-6">
+                            Nuestra Historia
+                        </h2>
+                        <p class="text-lg text-gray-700 mb-6">
+                            MBS es una empresa constructora con sede en
+                            Monterrey, Nuevo León, que se ha consolidado como
+                            líder en el sector de la construcción en el noreste
+                            de México. Desde nuestros inicios, nos hemos
+                            caracterizado por entregar proyectos de la más alta
+                            calidad.
+                        </p>
+                        <p class="text-lg text-gray-700 mb-6">
+                            Nuestra experiencia abarca proyectos residenciales,
+                            comerciales e industriales, siempre manteniendo los
+                            más altos estándares de seguridad, calidad y
+                            puntualidad en la entrega.
+                        </p>
+                        <div class="flex flex-wrap gap-4">
+                            <div class="bg-blue-100 px-4 py-2 rounded-lg">
+                                <span class="text-blue-800 font-semibold"
+                                    >Calidad Garantizada</span
+                                >
+                            </div>
+                            <div class="bg-green-100 px-4 py-2 rounded-lg">
+                                <span class="text-green-800 font-semibold"
+                                    >Puntualidad</span
+                                >
+                            </div>
+                            <div class="bg-purple-100 px-4 py-2 rounded-lg">
+                                <span class="text-purple-800 font-semibold"
+                                    >Innovación</span
+                                >
+                            </div>
+                        </div>
+                    </div>
+                    <div class="relative">
+                        <Image
+                            src={AboutUs1}
+                            alt="Equipo directivo MBS"
+                            class="rounded-2xl shadow-2xl w-full object-cover"
+                        />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Nuestro Liderazgo -->
+        <div class="flex flex-col md:flex-row w-full px-5 md:px-20 gap-4">
+            <div class="w-full md:w-1/2">
+                <Image
+                    src={More1}
+                    alt="about us"
+                    class="rounded-xl w-full h-auto object-cover"
+                />
+            </div>
+            <div class="w-full md:w-1/2">
+                <Image
+                    src={More7}
+                    alt="about us"
+                    class="rounded-xl w-full h-auto object-cover"
+                />
+            </div>
+        </div>
+
+        <!-- Apoyo al Golf Infantil -->
+        <section class="mt-10 px-4 bg-white">
+            <div class="max-w-6xl mx-auto">
+                <div class="text-center mb-12">
+                    <h2 class="text-4xl font-bold text-gray-900 mb-6">
+                        Fundación Golf por los Niños
+                    </h2>
+                    <p class="text-xl text-gray-700 max-w-3xl mx-auto">
+                        MBS se enorgullece de apoyar la fundación que utiliza
+                        torneos de golf para recaudar fondos destinados a ayudar
+                        a niños en Monterrey. Juntos construimos un futuro mejor
+                        para nuestra comunidad.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="group cursor-pointer">
+                        <div
+                            class="relative overflow-hidden rounded-2xl shadow-xl"
+                        >
+                            <Image
+                                src={More3}
+                                alt="MBS apoyando el golf infantil en Monterrey"
+                                class="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-110"
+                            />
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"
+                            >
+                            </div>
+                            <div class="absolute bottom-4 left-4 text-white">
+                                <h3 class="font-bold text-lg">
+                                    Recaudación de Fondos
+                                </h3>
+                                <p class="text-sm opacity-90">
+                                    Torneos solidarios
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="group cursor-pointer">
+                        <div
+                            class="relative overflow-hidden rounded-2xl shadow-xl"
+                        >
+                            <Image
+                                src={More4}
+                                alt="Niños aprendiendo golf con apoyo de MBS"
+                                class="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-110"
+                            />
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"
+                            >
+                            </div>
+                            <div class="absolute bottom-4 left-4 text-white">
+                                <h3 class="font-bold text-lg">
+                                    Apoyo a la Infancia
+                                </h3>
+                                <p class="text-sm opacity-90">
+                                    Cambiando vidas
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="group cursor-pointer">
+                        <div
+                            class="relative overflow-hidden rounded-2xl shadow-xl"
+                        >
+                            <Image
+                                src={More5}
+                                alt="Club de golf infantil patrocinado por MBS"
+                                class="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-110"
+                            />
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"
+                            >
+                            </div>
+                            <div class="absolute bottom-4 left-4 text-white">
+                                <h3 class="font-bold text-lg">
+                                    Impacto Social
+                                </h3>
+                                <p class="text-sm opacity-90">
+                                    Construyendo esperanza
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-12 text-center">
+                    <div
+                        class="inline-flex items-center bg-green-100 px-6 py-3 rounded-full"
+                    >
+                        <svg
+                            class="w-6 h-6 text-green-600 mr-2"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                        >
+                            <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
+                            ></path>
+                        </svg>
+                        <span class="text-green-800 font-semibold"
+                            >Patrocinadores orgullosos de la fundación benéfica</span
+                        >
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Compromiso Social -->
+        <section class="py-16 px-4 bg-blue-50 mt-12 lg:mt-20">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-4xl font-bold text-center text-gray-900 mb-6">
+                    Compromiso Social
+                </h2>
+                <p
+                    class="text-xl text-center text-gray-700 mb-12 max-w-3xl mx-auto"
+                >
+                    En MBS creemos en retribuir a la comunidad. Como
+                    patrocinadores orgullosos del concurso Banorte, apoyamos
+                    iniciativas que impulsan el desarrollo académico y
+                    profesional.
+                </p>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="group cursor-pointer">
+                        <div
+                            class="relative overflow-hidden rounded-2xl shadow-xl"
+                        >
+                            <Image
+                                src={MbsIISE1}
+                                alt="MBS patrocinador concurso Banorte IISE"
+                                class="w-full h-96 object-cover transition-transform duration-500 group-hover:scale-110"
+                            />
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"
+                            >
+                            </div>
+                            <div class="absolute bottom-4 left-4 text-white">
+                                <h3 class="font-bold text-lg">
+                                    Concurso Banorte
+                                </h3>
+                                <p class="text-sm opacity-90">
+                                    Patrocinio IISE
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="group cursor-pointer">
+                        <div
+                            class="relative overflow-hidden rounded-2xl shadow-xl"
+                        >
+                            <Image
+                                src={MbsIISE2}
+                                alt="Evento Banorte IISE patrocinado por MBS"
+                                class="w-full h-96 object-cover transition-transform duration-500 group-hover:scale-110"
+                            />
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"
+                            >
+                            </div>
+                            <div class="absolute bottom-4 left-4 text-white">
+                                <h3 class="font-bold text-lg">
+                                    Desarrollo Académico
+                                </h3>
+                                <p class="text-sm opacity-90">
+                                    Impulsando talento
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="group cursor-pointer">
+                        <div
+                            class="relative overflow-hidden rounded-2xl shadow-xl"
+                        >
+                            <Image
+                                src={MbsIISE3}
+                                alt="Participación MBS en concurso Banorte"
+                                class="w-full h-96 object-cover transition-transform duration-500 group-hover:scale-110"
+                            />
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"
+                            >
+                            </div>
+                            <div class="absolute bottom-4 left-4 text-white">
+                                <h3 class="font-bold text-lg">
+                                    Compromiso Social
+                                </h3>
+                                <p class="text-sm opacity-90">
+                                    Construyendo futuro
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Nuestros Valores -->
+        <section class="py-16 px-4 bg-gray-900 text-white">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-4xl font-bold text-center mb-12">
+                    Nuestros Valores
+                </h2>
+                <div
+                    class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8"
+                >
+                    <div
+                        class="text-center p-6 bg-gray-800 rounded-xl hover:bg-gray-700 transition-colors duration-300"
+                    >
+                        <div
+                            class="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-4"
+                        >
+                            <svg
+                                class="w-8 h-8 text-white"
+                                fill="none"
+                                stroke="currentColor"
+                                viewBox="0 0 24 24"
+                            >
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                                ></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">Calidad</h3>
+                        <p class="text-gray-300">
+                            Excelencia en cada detalle de nuestros proyectos
+                        </p>
+                    </div>
+                    <div
+                        class="text-center p-6 bg-gray-800 rounded-xl hover:bg-gray-700 transition-colors duration-300"
+                    >
+                        <div
+                            class="w-16 h-16 bg-green-600 rounded-full flex items-center justify-center mx-auto mb-4"
+                        >
+                            <svg
+                                class="w-8 h-8 text-white"
+                                fill="none"
+                                stroke="currentColor"
+                                viewBox="0 0 24 24"
+                            >
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"
+                                ></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">Seguridad</h3>
+                        <p class="text-gray-300">
+                            Protección total en cada obra que realizamos
+                        </p>
+                    </div>
+                    <div
+                        class="text-center p-6 bg-gray-800 rounded-xl hover:bg-gray-700 transition-colors duration-300"
+                    >
+                        <div
+                            class="w-16 h-16 bg-purple-600 rounded-full flex items-center justify-center mx-auto mb-4"
+                        >
+                            <svg
+                                class="w-8 h-8 text-white"
+                                fill="none"
+                                stroke="currentColor"
+                                viewBox="0 0 24 24"
+                            >
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">Innovación</h3>
+                        <p class="text-gray-300">
+                            Tecnología de vanguardia en construcción
+                        </p>
+                    </div>
+                    <div
+                        class="text-center p-6 bg-gray-800 rounded-xl hover:bg-gray-700 transition-colors duration-300"
+                    >
+                        <div
+                            class="w-16 h-16 bg-yellow-600 rounded-full flex items-center justify-center mx-auto mb-4"
+                        >
+                            <svg
+                                class="w-8 h-8 text-white"
+                                fill="none"
+                                stroke="currentColor"
+                                viewBox="0 0 24 24"
+                            >
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"
+                                ></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">Compromiso</h3>
+                        <p class="text-gray-300">
+                            Dedicación total con nuestros clientes
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section
+            class="py-16 px-4 bg-gradient-to-r from-blue-600 to-blue-800 text-white"
+        >
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="text-4xl font-bold mb-6">
+                    ¿Listo para tu próximo proyecto?
+                </h2>
+                <p class="text-xl mb-8 text-blue-100">
+                    Construyamos juntos el proyecto de tus sueños en Monterrey y
+                    toda la región
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a
+                        href="/contacto"
+                        class="bg-white text-blue-600 font-bold py-4 px-8 rounded-lg hover:bg-blue-50 transition-colors duration-300 shadow-lg"
+                    >
+                        Solicitar Cotización
+                    </a>
+                    <a
+                        href="/proyectos"
+                        class="border-2 border-white text-white font-bold py-4 px-8 rounded-lg hover:bg-white hover:text-blue-600 transition-all duration-300"
+                    >
+                        Ver Proyectos
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <Footer />
+    </main>
+</Layout>
